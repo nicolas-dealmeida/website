@@ -6,7 +6,7 @@ margin: 0;
 padding: 0; 
 }
 body { /* CSS du body */
-background-color: white; 
+background-color: #e8eaf1; 
 font-family: Verdana, sans-serif; 
 font-size: 100%;
 }
@@ -104,12 +104,12 @@ margin: 10px 0 10px;
 line-height: 10;
 }
 
-.TexteCentre { /*CSS Texte centré*/
+.TC { /*CSS Texte Centré*/
 text-align: center;
 }
-.TexteGauche { /*CSS texte à gauche*/
+.TG { /*CSS texte à Gauche*/
 text-align: left;
 }
-.TexteDroite { /*CSS texte à droite*/
+.TD { /*CSS texte à Droite*/
 text-align: right;
 }
