@@ -66,19 +66,14 @@ font-size: 80%;
 
 /*          CSS FLEXBOX            */ /* (Et autres classe concernant le Menu) */ /* */
 
-.Menu ul { /* S'applique sur la liste, et le menu donc */
+.Menu-Nav ul { /* S'applique sur la liste, et le menu donc */
 margin: 0px;
 padding: 0px;
 background: #0D1F2D;
 list-style:none;
-display: flex;
-flex-direction : row;
-justify-content: center;
-/*    @media(max-width: 450px) { /* Pour changer la taille du menu si Mobile ou taille trop petite */
-/*    flex-flow: column wrap;} Partie non fonctionelle, à vérifier plus tard */
 } 
 
-.Menu a { /* S'applique sur les liens dans le menu */
+.Menu-Nav a { /* S'applique sur les liens dans le menu */
 padding: 1em;
 display: block;
 text-align:center;
@@ -90,41 +85,46 @@ font-size: 30px;
 .Menu a:hover { /*CSS des liens lors du survole du curseur */
 text-decoration: underline white;
 }
-.Menu a:focus { /*CSS des liens lors de l'activation (clics) */
-color: white;
-text-decoration: underline white;
-}
 
-
-/* ATTENTION : SOUS-MENU */
-.Sous-Menu ul { /* S'applique sur la liste, et le menu donc */ /* ATTENTION : SOUS-MENU */
-margin: 0px;
-padding: 0px;
-background: #0D1F2D;
-list-style:none;
+.Menu-Nav .Menu {
 display: flex;
 flex-direction : row;
 justify-content: center;
-} 
-
-/* ATTENTION : SOUS-MENU */
-.Sous-Menu a { /* S'applique sur les liens dans le sous-menu */ /* ATTENTION : SOUS-MENU */
-padding: 1em;
-display: block;
-text-align:center;
-text-decoration: none;
-color: #EEEEEE;
-font-size: 30px;
+@media(max-width: 450px) {
+flex-flow: column wrap;} 
 }
 
+                                        /* ATTENTION : SOUS-MENU */
+
 /* ATTENTION : SOUS-MENU */
-.Sous-Menu a:hover { /*CSS des liens lors du survole du curseur */ /* ATTENTION : SOUS-MENU */
-text-decoration: underline white;
+
+
+.Sous-Menu-1 {
+position: relative;
 }
-/* ATTENTION : SOUS-MENU */
-.Sous-Menu a:focus { /*CSS des liens lors de l'activation (clics) */ /* ATTENTION : SOUS-MENU */
-color: white;
-text-decoration: underline white;
+.Sous-Menu-1:hover > .Sous-Menu-2 {
+display: flex;
+}
+
+.Sous-Menu-2 {
+display: none ; 
+flex-flow: column wrap;
+min-width: 100px;
+position: absolute;
+/*@media(max-width: 450px) {
+position: static;
+}*/
+}
+
+.Sous-Menu-2.is-active {
+display: flex ;
+}
+
+.Sous-Menu-2 a {
+text-align: left;
+/*@media(max-width: 450px) {
+text-align: center;
+}*/
 }
 
 
