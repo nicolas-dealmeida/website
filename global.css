@@ -66,6 +66,9 @@ font-size: 80%;
 
 /*          CSS FLEXBOX            */ /* (Et autres classe concernant le Menu) */ /* */
 
+.Logo {
+}
+
 .Menu-Nav ul { /* S'applique sur la liste, et le menu donc */
 margin: 0px;
 padding: 0px;
@@ -74,12 +77,15 @@ list-style:none;
 } 
 
 .Menu-Nav a { /* S'applique sur les liens dans le menu */
-padding: 1em;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+padding-right: 20px;
 display: block;
 text-align:center;
 text-decoration: none;
 color: #EEEEEE;
-font-size: 30px;
+font-size: 27px;
 }
 
 .Menu a:hover { /*CSS des liens lors du survole du curseur */
@@ -90,16 +96,13 @@ text-decoration: underline white;
 display: flex;
 flex-direction : row;
 justify-content: center;
-@media(max-width: 450px) {
-flex-flow: column wrap;} 
 }
 
                                         /* ATTENTION : SOUS-MENU */
 
+
 /* ATTENTION : SOUS-MENU */
-
-
-.Sous-Menu-1 {
+.Sous-Menu-1 { 
 position: relative;
 }
 .Sous-Menu-1:hover > .Sous-Menu-2 {
@@ -111,9 +114,6 @@ display: none ;
 flex-flow: column wrap;
 min-width: 100px;
 position: absolute;
-/*@media(max-width: 450px) {
-position: static;
-}*/
 }
 
 .Sous-Menu-2.is-active {
@@ -122,9 +122,6 @@ display: flex ;
 
 .Sous-Menu-2 a {
 text-align: left;
-/*@media(max-width: 450px) {
-text-align: center;
-}*/
 }
 
 
