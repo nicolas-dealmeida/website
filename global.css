@@ -66,10 +66,12 @@ font-size: 80%;
 
 /*          CSS FLEXBOX            */ /* (Et autres classe concernant le Menu) */ /* */
 
-.Logo {
+.Logo { /* A améliorer plus tard ! */
+display: flex;
+width: 50px;
 }
 
-.Menu-Nav ul { /* S'applique sur la liste, et le menu donc */
+.Menu-Nav ul{ /* S'applique sur la liste, et le menu donc */
 margin: 0px;
 padding: 0px;
 background: #0D1F2D;
