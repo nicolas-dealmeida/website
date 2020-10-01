@@ -7,7 +7,7 @@ padding: 0;
 }
 body { /* CSS du body */
 background-color: #e8eaf1; 
-font-family: Verdana, sans-serif; 
+font-family: Verdana, sans-serif;
 font-size: 100%;
 }
 
@@ -15,10 +15,10 @@ font-size: 100%;
 .Div1 {
 background-color: #dadce4;
 
-margin-top: 0px;
-margin-bottom: 0px;
-margin-left: 5px;
-margin-right: 5px;
+margin-top: 0%;
+margin-bottom: 0%;
+margin-left: 0.5%;
+margin-right: 0.5%;
 
 padding-top: 0.5%;
 padding-bottom: 0.5%;
@@ -59,6 +59,9 @@ text-decoration: underline;
 }
 .FS120 { /* Grosse écriture (Style Titre mais dans le texte même) */
 font-size: 120%;
+}
+.FS90 { /* Petite moyenne écriture */
+font-size: 90%;
 }
 .FS80 { /* Petite écriture */
 font-size: 80%;
