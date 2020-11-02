@@ -59,19 +59,21 @@
                 <p>Mail : <a href="mailto:nicolasdeal76@gmail.com">nicolasdeal76@gmail.com</a></p>
             </div>
             <div class="Div1 FlexC">
-            <form method="post"> <!-- FORMULAIRE AYANT BESOIN DE PHP, SINON NON FONCTIONNEL -->
-                <div><label>Nom :</label></div>
-                <div><input type="message" name="Nom" required></div>
-                <div><label>Âge :</label></div>
-                <div><input type="message" name="Age" required></div>
-                <div><label>Sexe :</label></div>
-                <div><input type="message" name="Sexe" required></div>
-                <div><label>Email :</label></div>
-                <div><input type="email" name="Email" required></div>
-                <div><label>Message :</label></div>
-                <div><textarea name="Message" required></textarea></div>
-                <div><input type="submit"></div>
-            </form>
+                <form method="post"> <!-- FORMULAIRE AYANT BESOIN DE PHP, SINON NON FONCTIONNEL -->
+                    <div><label>Nom :</label></div>
+                    <div><input type="text" name="Nom" required></div>
+                    <div><label>Âge :</label></div>
+                    <div><input type="number" name="Age" required></div>
+                    <div><label>Sexe :</label></div>
+                    <div><input type="text" name="Sexe" required></div>
+                    <div><label>Email :</label></div>
+                    <div><input type="email" name="Email" required></div>
+                    <div><label>Message :</label></div>
+                    <div><textarea name="Message" required></textarea></div>
+                    <div><input type="submit"></div>
+                </form>
+            </div>
+        </div>
             <!-- CODE EN PHP
             <?php
             if (isset($_POST['message'])) {
@@ -88,6 +90,5 @@
             }
             ?>
             FIN COMMENTAIRE -->
-        </div>
     </body>
 </html>

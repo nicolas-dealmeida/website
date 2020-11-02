@@ -242,6 +242,7 @@ th {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.40);
 }
 
 
@@ -363,7 +364,7 @@ th {
     }
     .YT { /* Taille de l'intégration YT */
         height:250px;
-        widows:300px;;
+        widows:300;
     }
 }
 
@@ -387,9 +388,27 @@ th {
     width:300px;
 }
 
-.YT { /* Taille de l'intégration YT */
+.YT { /* Intégration Youtube */
     height:315px;
     width:560px;
+    border:0px;
+}
+.SDCD1 { /* Intégration SpundClound */
+    width:100%;
+    height:300px;
+    border:0px;
+    scroll-behavior:auto;
+}
+.SDCD2 { /* Intégration SpundClound */
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family:Verdana,Tahoma,sans-serif;
+    font-weight:100;
 }
 
 .P05 { /* Padding de 0.5% sur les cotés et hauteur */
