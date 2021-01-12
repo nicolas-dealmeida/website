@@ -37,12 +37,6 @@
                                 <li><a href="Haematopus-ostralegus.html">Huîtrier pie</a></li>
                             </ul>
                         </li>
-                        <li class="Sous-Menu-1"><a href="cv.html">Curriculum vitæ</a>
-                            <ul class="Sous-Menu-2b">
-                                <li><a href="cv-fr.html">Curriculum vitæ - Français</a></li>
-                                <li><a href="cv-en.html">Curriculum vitæ - English</a></li>
-                            </ul>
-                        </li>
                         <li><a href="galerie-images.html">Galerie d'images</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -56,7 +50,7 @@
         </div>
         <div class="Div0 FlexC FlexAC FlexJC">
             <div class="Div1">
-                <p>Mail : <a href="mailto:nicolasdeal76@gmail.com">nicolasdeal76@gmail.com</a></p>
+                <p>Mail :</p>
             </div>
             <div class="Div1 FlexC">
                 <form method="post"> <!-- FORMULAIRE AYANT BESOIN DE PHP, SINON NON FONCTIONNEL -->
@@ -74,21 +68,5 @@
                 </form>
             </div>
         </div>
-        <!-- CODE EN PHP
-        <?php
-        if (isset($_POST['message'])) {
-            $position_arobase = strpos($_POST['email'], '@');
-            if ($position_arobase === false)
-                echo '<div class="Div1 FlexC"><p>Votre email doit être valide.</p></div>';
-            else {
-                $retour = mail('nicolasdeal76@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
-                if($retour)
-                    echo '<div class="Div1 FlexC"><p>Votre message a été envoyé.</p></div>';
-                else
-                    echo '<div class="Div1 FlexC"><p>Erreur, envoyez un mail manuellement.</p></div>';
-            }
-        }
-        ?>
-        FIN COMMENTAIRE -->
     </body>
 </html>
