@@ -255,13 +255,7 @@ th {
 .Sous-Menu-1:hover > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
     display: flex;
 }
-.Sous-Menu-1:hover > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
-    display: flex;
-}
 .Sous-Menu-1:active > .Sous-Menu-2a { /* Active le sous menu lors du survole*/
-    display: flex;
-}
-.Sous-Menu-1:active > .Sous-Menu-2b { /* Active le sous menu lors du survole*/
     display: flex;
 }
 
@@ -271,24 +265,12 @@ th {
     min-width: 205px;
     position: absolute;
 }
-.Sous-Menu-2b { /* Sous Menu CV */
-    display: none ; 
-    flex-flow: column wrap;
-    min-width: 205px;
-    position: absolute;
-}
 
 .Sous-Menu-2a.is-active { /* Active le sous menu lors du survole*/
     display: flex;
 }
-.Sous-Menu-2b.is-active { /* Active le sous menu lors du survole */
-    display: flex;
-}
 
 .Sous-Menu-2a a {
-    text-align: left;
-}
-.Sous-Menu-2b a {
     text-align: left;
 }
 
@@ -302,9 +284,6 @@ th {
         padding-bottom: 5px;
         padding-left: 5px;
         padding-right: 5px;
-    }
-    .Sous-Menu-2b.is-active { /* Désactive le sous menu */
-        display: none;
     }
     .Sous-Menu-2a.is-active { /* Désactive le sous menu */
         display: none;
